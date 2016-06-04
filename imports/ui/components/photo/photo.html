@@ -1,0 +1,51 @@
+<!--header id="photo-header" class="menu">
+	<span class="icon-keyboard-left-arrow-button left" ng-click="stepBack()"></span>
+	<span class="icon-google-plus-party-mode right ic-mg-r" ng-if="editing && step == 1" ng-click="openCamera()"></span>
+	<span class="icon-keyboard-right-arrow-button right" ng-show="step == 2" ng-click="stepForward()"></span>
+	<span class="icon-check-symbol right ic-mg-r" ng-show="step == 3" ng-click="publishPicture()"></span>
+</header-->
+
+<!--footer id="photo-footer" class="menu" ng-show="step == 1">
+	<div ng-click="openGallery()"><span class="icon-mountain-range-on-black-background"></span></div>
+	<div ng-click="takePicture()" ng-hide="editing"><span class="icon-camera"></span></div>
+	<div ng-click="cropPicture()" ng-show="editing"><span class="icon-cut-content-button"></span></div>
+</footer-->
+
+<header id="photo-header" class="menu">
+	<span class="icon-keyboard-left-arrow-button left" ng-click="photo.goBack()"></span>
+</header>
+
+<div id="step1" ng-show="photo.step == 1">
+	<div id="editing-img" ng-show="photo.editing"></div>
+
+<!--img ng-src="{{photo.editingSrc}}" /-->
+
+	<!--div class="objetive" ng-style="photoHeight">
+		<div class="objetive-container">
+			<div class="take-picture" ng-click="takePicture()" ng-hide="editing"></div>
+		</div>
+	</div-->
+</div>
+
+
+
+
+
+
+<!--div>Select an image file: <input type="file" id="fileInput" /></div>
+  <div class="cropArea">
+    <img-crop image="photo.myImage" result-image="photo.myCroppedImage"></img-crop>
+  </div>
+  <div>Cropped Image:</div>
+  <div><img ng-src="{{photo.myCroppedImage}}" /></div-->
+
+
+
+
+
+
+<footer id="photo-footer" class="menu">
+	<div ng-click="photo.openGallery()"><span class="icon-mountain-range-on-black-background"></span></div>
+	<div ng-hide="photo.editing"><span class="icon-camera"></span></div>
+	<div ng-show="photo.editing"><span class="icon-cut-content-button"></span></div>
+</footer>

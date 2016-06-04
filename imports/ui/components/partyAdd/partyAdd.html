@@ -1,23 +1,20 @@
-<div layout="column" layout-padding>
-  <md-input-container>
-  <label>
-    Party Name:
-  </label>
-  <input type="text" ng-model="partyAdd.party.name"/>
-</md-input-container>
-<md-input-container>
-<label>
-  Description:
-</label>
-<input type="text" ng-model="partyAdd.party.description"/>
-</md-input-container>
-<div flex>
-  <md-checkbox ng-model="partyAdd.party.public" aria-label="Public Party?">
-  Public Party?
-</md-checkbox>
-</div>
-<div flex>
-  <md-button ng-click="partyAdd.submit()" class="md-raised">Add Party!</md-button>
-</div>
-<party-upload files="partyAdd.party.images"></party-upload>
-</div>
+<form>
+  <div class="form-group">
+    <label>
+      Party Name:
+    </label>
+    <input type="text" ng-model="partyAdd.party.name" class="form-control"/>
+  </div>
+  <div class="form-group">
+    <label>
+      Description:
+    </label>
+    <input type="text" ng-model="partyAdd.party.description" class="form-control"/>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox" ng-model="partyAdd.party.public"/> Public Party?
+    </label>
+  </div>
+  <button ng-click="partyAdd.submit()" class="btn btn-success">Add Party!</button>
+</form>

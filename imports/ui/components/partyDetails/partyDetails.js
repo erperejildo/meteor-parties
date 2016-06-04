@@ -33,7 +33,7 @@ class PartyDetails {
       }
     });
   }
-
+  
   canInvite() {
     if (!this.party) {
       return false;

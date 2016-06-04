@@ -1,0 +1,20 @@
+footer-menu {
+	position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: $color1;
+    color: #fff;
+    min-height: $footerHeight;
+    line-height: $footerHeight;
+
+    a {
+	    float: left;
+	    width: 25%;
+	    text-align: center;
+        font-size: 27px;
+
+        &.active {
+            color: $color4;
+        }
+    }
+}

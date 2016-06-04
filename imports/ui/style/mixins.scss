@@ -1,0 +1,31 @@
+@mixin calc($val1, $val2) {
+	height: calc(#{$val1} - #{$val2});
+	height: -moz-calc(#{$val1} - #{$val2});
+    height: -webkit-calc(#{$val1} - #{$val2});
+    height: -ms-calc(#{$val1} - #{$val2});
+    height: -o-calc(#{$val1} - #{$val2});
+}
+
+@mixin border-radius($val1, $val2, $val3, $val4) {
+	border-radius: $val1 $val2 $val3 $val4;
+	-webkit-border-radius: $val1 $val2 $val3 $val4;
+	-moz-border-radius: $val1 $val2 $val3 $val4;
+	-ms-border-radius: $val1 $val2 $val3 $val4;
+	-o-border-radius: $val1 $val2 $val3 $val4;
+}
+
+@mixin transform($val) {
+	transform: $val;
+	-webkit-transform: $val;
+	-moz-transform: $val;
+	-ms-transform: $val;
+	-o-transform: $val;
+}
+
+@mixin animation($val) {
+	animation: $val;
+	-webkit-animation: $val;
+	-moz-animation: $val;
+	-ms-animation: $val;
+	-o-animation: $val;
+}

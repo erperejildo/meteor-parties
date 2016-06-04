@@ -1,0 +1,18 @@
+<!--ul>
+	<li ng-click="selectOption('')" ng-class="{'active':activeOption == ''}"><a href="#/"><span class="icon-home-button"></span></a></li>
+	<li ng-click="selectOption('food')" ng-class="{'active':activeOption == 'food'}"><a ng-href="#/food"><span class="icon-food-search"></span></a></li>
+	<li><a ng-href="#/photo"><span class="icon-camera"></span></a></li>
+	<li ng-click="selectOption('favourites')" ng-class="{'active':activeOption == 'favourites'}"><a ng-href="#/favourites"><span class="icon-mark-as-favorite-star"></span></a></li>
+</ul-->
+
+<!--ul>
+	<li><a href="/news"><span class="icon-home-button"></span></a></li>
+	<li><a ng-href="/parties"><span class="icon-food-search"></span></a></li>
+	<li><a ng-href="/photo"><span class="icon-camera"></span></a></li>
+	<li><a ng-href="/favourites"><span class="icon-mark-as-favorite-star"></span></a></li>
+</ul-->
+
+<a href="/news" ng-class="{'active':footerMenu.getPath() == 'news'}"><span class="icon-home-button"></span></a>
+<a ng-href="/parties" ng-class="{'active':footerMenu.getPath() == 'parties'}"><span class="icon-food-search"></span></a>
+<a ng-href="/photo"><span class="icon-camera"></span></a>
+<a ng-href="/favourites"><span class="icon-mark-as-favorite-star"></span></a>

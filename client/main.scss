@@ -1,0 +1,21 @@
+body {
+  background-color: #f9f9f9;
+}
+
+.cropArea {
+  background: #E4E4E4;
+  overflow: hidden;
+  width:500px;
+  height:350px;
+}
+
+
+@import "../imports/ui/style/vars";
+@import "../imports/ui/style/mixins";
+@import "../imports/ui/style/fonts";
+@import "../imports/ui/style/reset";
+@import "../imports/ui/style/global";
+@import "../imports/ui/components/socially/socially";
+@import "../imports/ui/components/footerMenu/footerMenu";
+@import "../imports/ui/components/photo/photo";
+@import "../imports/lib/croppie/croppie";

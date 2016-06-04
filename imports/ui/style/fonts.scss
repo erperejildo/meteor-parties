@@ -1,0 +1,224 @@
+@font-face {
+    font-family: Italic;
+    src: url('/fonts/SourceSansPro-It.otf');
+}
+
+@font-face {
+    font-family: Light;
+    src: url('/fonts/SourceSansPro-Light.otf');
+}
+
+@font-face {
+    font-family: LightIt;
+    src: url('/fonts/SourceSansPro-LightIt.otf');
+}
+
+@font-face {
+    font-family: Regular;
+    src: url('/fonts/SourceSansPro-Regular.otf');
+}
+
+@font-face {
+    font-family: Bold;
+    src: url('/fonts/SourceSansPro-Semibold.otf');
+}
+
+@font-face {
+    font-family: BoldIt;
+    src: url('/fonts/SourceSansPro-SemiboldIt.otf');
+}
+
+@font-face {
+    font-family: Icons;
+    src: url('/fonts/icons.ttf');
+}
+
+[class^="icon"], [class*=" icon"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: Icons;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-add:before {
+    content: "\add";
+}
+.icon-add-comment:before {
+    content: "\adaf";
+}
+.icon-add-plus-button:before {
+    content: "\e903";
+}
+.icon-add-user-button:before {
+    content: "\e904";
+}
+.icon-attachment-clip:before {
+    content: "\e905";
+}
+.icon-back-arrow:before {
+    content: "\e906";
+}
+.icon-backspace-arrow:before {
+    content: "\e907";
+}
+.icon-black-bubble-speech:before {
+    content: "\e908";
+}
+.icon-bookmark-button:before {
+    content: "\e90e";
+}
+.icon-bubble-speech-with-three-lines:before {
+    content: "\e909";
+}
+.icon-button-on:before {
+    content: "\e90f";
+}
+.icon-camera:before {
+    content: "\e90a";
+}
+.icon-camera-diaphragm:before {
+    content: "\e901";
+}
+.icon-cancel-button:before {
+    content: "\e90b";
+}
+.icon-check-symbol:before {
+    content: "\e912";
+}
+.icon-circle-with-check-symbol:before {
+    content: "\e90c";
+}
+.icon-clear-button:before {
+    content: "\e90d";
+}
+.icon-create-group-button:before {
+    content: "\e910";
+}
+.icon-create-new-pencil-button:before {
+    content: "\e911";
+}
+.icon-cut-content-button:before {
+    content: "\e92d";
+}
+.icon-ellipsis:before {
+    content: "\e913";
+}
+.icon-expand-arrow:before {
+    content: "\e914";
+}
+.icon-facebook-logo:before {
+    content: "\e915";
+}
+.icon-favorite-heart-button:before {
+    content: "\e916";
+}
+.icon-favorite-heart-outline-button:before {
+    content: "\e917";
+}
+.icon-forward-arrow:before {
+    content: "\e918";
+}
+.icon-full-screen-exit:before {
+    content: "\e900";
+}
+.icon-google-drive-logo:before {
+    content: "\e932";
+}
+.icon-google-hangouts-logo:before {
+    content: "\e919";
+}
+.icon-google-plus-logo-on-black-background:before {
+    content: "\e933";
+}
+.icon-google-plus-party-mode:before {
+    content: "\e91a";
+}
+.icon-help-round-button:before {
+    content: "\e91b";
+}
+.icon-home-button:before {
+    content: "\e934";
+}
+.icon-horizontal-line-remove-button:before {
+    content: "\e928";
+}
+.icon-keyboard-left-arrow-button:before {
+    content: "\e902";
+}
+.icon-keyboard-right-arrow-button:before {
+    content: "\e91c";
+}
+.icon-mark-as-favorite-star:before {
+    content: "\e91d";
+}
+.icon-menu-button:before {
+    content: "\e91e";
+}
+.icon-mountain-range-on-black-background:before {
+    content: "\e935";
+}
+.icon-new-tab-button:before {
+    content: "\e930";
+}
+.icon-pinterest-logo:before {
+    content: "\e91f";
+}
+.icon-report-symbol:before {
+    content: "\e929";
+}
+.icon-round-account-button-with-user-inside:before {
+    content: "\e920";
+}
+.icon-rounded-info-button:before {
+    content: "\e92a";
+}
+.icon-round-error-symbol:before {
+    content: "\e92b";
+}
+.icon-rubbish-bin-delete-button:before {
+    content: "\e921";
+}
+.icon-searching-magnifying-glass:before {
+    content: "\e922";
+}
+.icon-share-button:before {
+    content: "\e923";
+}
+.icon-show-more-button-with-three-dots:before {
+    content: "\e936";
+}
+.icon-sms-bubble-speech:before {
+    content: "\e924";
+}
+.icon-switch-to-full-screen-button:before {
+    content: "\e925";
+}
+.icon-turn-notifications-off-button:before {
+    content: "\e926";
+}
+.icon-turn-notifications-on-button:before {
+    content: "\e927";
+}
+.icon-twitter-logo-on-black-background:before {
+    content: "\e931";
+}
+.icon-food-search:before {
+    content: "\e92c";
+}
+.icon-add2:before {
+    content: "\ade";
+}
+.icon-ok:before {
+    content: "\e92e";
+}
+.icon-remove:before {
+    content: "\e92f";
+}

@@ -1,0 +1,256 @@
+#originPictureContainer {
+	overflow: hidden;
+	width: 100%;
+	height: 360px;
+
+	#originalPicture, #filteredPhoto {
+		width: 100%;
+		//margin-top: -38%;
+	}
+}
+
+#editing {
+	img {
+		width: 100%;
+	}
+}
+
+#focus {
+	position: absolute;
+	bottom: 80px;
+}
+
+.objetive {
+	position: absolute;
+	bottom: 50px;
+	width: 100%;
+
+	.objetive-container {
+		position: relative;
+		width: 100%;
+		height: 100%;
+	}
+
+	.take-picture {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		@include transform(translate(-50%, -50%));
+		bottom: 80px;
+		width: 50px;
+		height: 50px;
+		@include border-radius(50%, 50%, 50%, 50%);
+		background-color: $color1;
+	}
+}
+
+#photo-header {
+
+}
+
+#photo-footer {
+	position: fixed;
+	bottom: 0;
+
+	div {
+		float: left;
+		width: 50%;
+	}
+}
+
+canvas {
+    image-rendering: optimizeSpeed;             // Older versions of FF
+    image-rendering: -moz-crisp-edges;          // FF 6.0+
+    image-rendering: -webkit-optimize-contrast; // Webkit (non standard naming)
+    image-rendering: -o-crisp-edges;            // OS X & Windows Opera (12.02+)
+    image-rendering: crisp-edges;               // Possible future browsers.
+    -ms-interpolation-mode: nearest-neighbor;   // IE (non standard naming)
+}
+
+#filters{
+	padding: 20px 20px 30px;
+	overflow: hidden;
+	list-style: none;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+#filters li{
+	display:inline-block;
+	margin:0 15px 0 0;
+}
+
+#filters li:last-child{
+	margin-right:0;
+}
+
+#filters li {
+	display: block;
+	width: 150px;
+	height: 130px;
+	display: inline-block;
+	position: relative;
+	background: center top no-repeat;
+	text-decoration: none !important;
+
+	font-weight: bold;
+	line-height: 294px;
+	text-align: center;
+	box-shadow: 0 0 1px rgba(255,255,255,0.4) inset;
+	border-radius: 4px;
+	font-size: 12px;
+}
+
+#filters li a.active{
+	cursor:default;
+}
+
+#filters li .active:before{
+	content: '';
+	position: absolute;
+	width: 49px;
+	height: 45px;
+	top: 43px;
+	left: 51px;
+	background: url('../img/star.jpg') no-repeat;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.5);
+}
+
+
+/*#filters #normal{		background-image:url('../images/filters/normal.jpg'); }
+#filters #vintage{		background-image:url('../images/filters/vintage.jpg'); }
+#filters #lomo{			background-image:url('../images/filters/lomo.jpg'); }
+#filters #clarity{		background-image:url('../images/filters/clarity.jpg'); }
+#filters #sinCity{		background-image:url('../images/filters/sinCity.jpg'); }
+#filters #sunrise{		background-image:url('../images/filters/sunrise.jpg'); }
+#filters #crossProcess{	background-image:url('../images/filters/crossProcess.jpg'); }
+#filters #orangePeel{	background-image:url('../images/filters/orangePeel.jpg'); }
+#filters #love{			background-image:url('../images/filters/love.jpg'); }
+#filters #grungy{		background-image:url('../images/filters/grungy.jpg'); }
+#filters #jarques{		background-image:url('../images/filters/jarques.jpg'); }
+#filters #pinhole{		background-image:url('../images/filters/pinhole.jpg'); }
+#filters #oldBoot{		background-image:url('../images/filters/oldBoot.jpg'); }
+#filters #glowingSun{	background-image:url('../images/filters/glowingSun.jpg'); }
+#filters #hazyDays{		background-image:url('../images/filters/hazyDays.jpg'); }
+#filters #herMajesty{	background-image:url('../images/filters/herMajesty.jpg'); }
+#filters #nostalgia{		background-image:url('../images/filters/nostalgia.jpg'); }
+#filters #hemingway{		background-image:url('../images/filters/hemingway.jpg'); }
+#filters #concentrate{	background-image:url('../images/filters/concentrate.jpg'); }*/
+
+#filters li {
+	background-image:url('../images/filters/normal.jpg');
+}
+
+#step1 {
+	position: absolute;
+	top: 50%;
+	@include transform(translate(0,-50%));
+}
+
+.crop {
+	    background-color: grey;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    display: block;
+    width: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+// STEP 3
+#step3 {
+	padding: 10px;
+
+	input {
+		padding: 28px 0;
+		margin-left: 5px;
+	}
+}
+
+#photo-xs {
+	width: 75px;
+	height: 75px;
+	vertical-align: middle;
+}
+
+.border-l {
+	border-bottom: 2px solid #ccc;
+	padding: 0 10px 10px 10px;
+
+	&.maximized {
+		background: #fff;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 0;
+		height: 100%;
+		z-index: 2;
+		padding: 0;
+		margin: 0;
+		border: 0;
+
+		#photo-xs {
+			width: 100%;
+			height: auto;
+			width: 100%;
+			height: auto;
+			position: absolute;
+			top: 50%;
+			@include transform(translate(0,-50%));
+		}
+
+		input {
+			display: none;
+		}
+	}
+}
+.border-m {
+	li {
+		border-bottom: 1px solid #ccc;
+		padding: 15px 10px 15px 10px;
+	}
+
+	span {
+		margin-right: 10px;
+	}
+}
+
+.info {
+	color: #ccc;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.adding-info {
+	background-color: #fff;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+
+	input {
+		width: 100%;
+	}
+}
+
+#ingredients {
+	li {
+		padding: 10px;
+
+		[class^="icon"] {
+			color: grey;
+			margin-right: 10px;
+		}
+	}
+
+	#repeated {
+		text-align: center;
+	}
+
+	.grey {
+		background-color: #eee;
+	}
+}
+// END STEP 3

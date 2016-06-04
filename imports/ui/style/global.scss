@@ -1,0 +1,64 @@
+body {
+	font-family: Regular;
+}
+
+.container.full-height {
+	height: 100% !important;
+    background-color: #fff;
+}
+
+.menu {
+    width: 100%;
+    background-color: $color1;
+    color: $colorText;
+    text-align: center;
+    height: $footerHeight;
+    line-height: $footerHeight;
+
+    [class^="icon"] {
+        line-height: $footerHeight;
+        font-size: 30px;
+    }
+
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+}
+
+input {
+    border: 0;
+    background-color: transparent;
+    vertical-align: middle;
+    font-family: inherit;
+    font-size: inherit;
+
+    &:focus {
+        outline-width: 0;
+    }
+}
+
+::-webkit-input-placeholder {
+   color: #ccc;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #ccc;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #ccc;  
+}
+
+:-ms-input-placeholder {  
+   color: #ccc;  
+}
+
+.ic-mg-l {
+    padding-left: 10px;
+}
+.ic-mg-r {
+    padding-right: 10px;
+}
